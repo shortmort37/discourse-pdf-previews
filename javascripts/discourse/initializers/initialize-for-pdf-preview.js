@@ -90,7 +90,7 @@ export default {
           
           let pdfDoc = null;
           let currentPage = 1;
-          let scale = 1.5; // Starting scale for good readability
+          let scale = 1.0; // Start at 100% (1.0 scale)
           
           const renderPage = async (pageNum) => {
             const page = await pdfDoc.getPage(pageNum);
